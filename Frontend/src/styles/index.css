@@ -1,0 +1,219 @@
+/* taillwind css configuration */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-color: #3490dc;
+    --secondary-color: #ffed4a;
+    --bg-color: #ffcb50;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+.scroll {
+  height: 100%;
+  overflow: auto; /* add a vertical scrollbar */
+}
+
+.scroll::-webkit-scrollbar {
+  height: 20px;
+  width: 8px; /* width of the entire scrollbar */
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: black; /* color of the tracking area */
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #ffcb50; /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+
+  /* creates padding around scroll thumb */
+}
+.scroll2 {
+  height: 100%;
+  overflow: auto; /* add a vertical scrollbar */
+}
+
+.scroll2::-webkit-scrollbar {
+  height: 20px;
+  width: 8px; /* width of the entire scrollbar */
+}
+
+.scroll2::-webkit-scrollbar-track {
+  background: black; /* color of the tracking area */
+}
+
+.scroll2::-webkit-scrollbar-thumb {
+  background-color: wheat; /* color of the scroll thumb */
+  border-radius: 5px; /* roundness of the scroll thumb */
+
+  /* creates padding around scroll thumb */
+}
+.container0 {
+  width: 100%;
+  background-color: black;
+}
+.container-fluid {
+  background-color: black;
+}
+.img {
+  height: 2%;
+  width: 30%;
+  display: inline;
+  padding: 0px;
+}
+.form {
+  margin-left: 37%;
+}
+.conForm {
+  padding-top: 8%;
+}
+.title {
+  color: rgb(255, 255, 255);
+  font-size: xx-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.submitbutton {
+  background-color: black;
+  color: #ffed4a;
+  border: black solid 1px;
+  padding: 5px 10px;
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 40%;
+  border-radius: 10%;
+}
+.go {
+  color: #ffed4a;
+}
+.khufu {
+  color: white;
+}
+.container {
+  /* background-image: url("https://www.shutterstock.com/image-photo/bus-traveling-on-asphalt-road-600nw-1345741577.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+/* map styles */
+.map-container {
+  border-radius: 20px;
+  height: 500px;
+  transition: all 0.4s;
+  position: relative !important;
+  margin-top: 10px;
+}
+.card {
+  height: 300px;
+  border: #cbcbcb solid 1px;
+  background-color: #130d00;
+  border-radius: 15px;
+}
+
+/* .card:hover {
+  box-shadow: 5px 3px 24px 10px rgba(128, 127, 127, 0.457);
+  cursor: pointer;
+  width: 105%;
+} */
+.line {
+  color: rgba(128, 128, 128, 0.801);
+  border-bottom: #f6f6f668 solid 0.5px;
+  border-top-color: white;
+}
+.circule {
+  background-color: #ffcb50;
+  width: 59px;
+  height: 59px;
+  border-radius: 100%;
+}
+.text {
+  color: rgb(189, 186, 186);
+}
+.conCard {
+  box-sizing: content-box;
+}
+.search {
+  padding: 0.5%;
+  border: white;
+  border-radius: 15px;
+
+  margin-top: 1%;
+  padding-left: 1rem;
+}
+.input {
+  border: none;
+  color: #000000;
+  background-color: #ffcb50;
+  border-bottom: #000000 1px solid;
+  margin-left: 1.5rem;
+  margin-top: 6rem;
+}
+.input::placeholder {
+  color: #000000;
+  font-weight: bolder;
+}
+.input:focus {
+  outline: none;
+}
+
+.searchCon {
+  background-color: black;
+}
+.search input {
+  border: 0;
+  outline: none;
+}
+.search:focus {
+  outline: none;
+  box-shadow: 0px -1px 22px 4px rgba(247, 213, 102, 0.7);
+}
+.sgrid {
+  height: max-content;
+}
+.div {
+  border: #0d0d0d solid 1px;
+  border-radius: 15px;
+  height: 35rem;
+  background-color: #ffcb50;
+  color: #000000;
+}
+.trip {
+  font-weight: bolder;
+  margin-top: 6rem;
+}
+.clickbtn {
+  border-radius: 15px;
+  width: 10rem;
+}
+.noTripH {
+  font-weight: 400;
+  font-size: 48px;
+  color: #8b8b8b;
+}
+.noTripP {
+  font-weight: 400;
+  font-size: 24px;
+  color: #8b8b8b;
+}
+.businfo {
+  background-color: var(--bg-color);
+}
+.type {
+  background: linear-gradient(
+    to right,
+    rgba(252, 177, 0, 1),
+    rgba(255, 203, 80, 1)
+  );
+}
